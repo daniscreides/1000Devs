@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/* ====================== Body / Geral ====================== */
+body {
+    background-color: #D6D1F6; /* Cor de fundo da página */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte principal */
+    text-align: justify; /* Texto justificado */
+    margin-top: 0; /* Remove margem superior */
+    margin-right: 0; /* Remove margem direita */
+    margin-bottom: 0; /* Remove margem inferior */
+    margin-left: 0; /* Remove margem esquerda */
+    padding-top: 1em; /* Espaçamento interno superior */
+    padding-right: 1em; /* Espaçamento interno à direita */
+    padding-bottom: 1em; /* Espaçamento interno inferior */
+    padding-left: 1em; /* Espaçamento interno à esquerda */
+}
+
+/* ====================== Foto de Perfil ====================== */
+.fotoperfil {
+    display: block; /* Transforma a imagem em bloco */
+    margin-bottom: 0.625em; /* Espaçamento abaixo da foto */
+    width: 13em; /* Largura da imagem */
+    height: auto; /* Altura proporcional */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* ====================== Linhas Horizontais ====================== */
+hr {
+    border: none; /* Remove borda padrão */
+    border-top: 3px solid #082640; /* Adiciona linha superior com cor e espessura */
+    margin: 20px auto; /* Espaçamento vertical e centralização horizontal */
+    width: 80%; /* Largura da linha */
+}
+
+/* ====================== Título Principal ====================== */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    color: #082640; /* Cor do texto */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte do texto */
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+/* ====================== Redes Sociais ====================== */
+/* Container dos ícones de redes */
+.redes {
+    display: flex; /* Flexbox para alinhar os ícones */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 17px; /* Espaço entre os ícones */
+    margin-bottom: 15px; /* Espaçamento abaixo da div */
+}
+
+/* Estiliza os ícones dentro da div de redes */
+.redes img {
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: transform 0.2s; /* Animação suave para transformações */
+}
+
+/* Efeito ao passar o mouse sobre os ícones */
+.redes img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone */
+}
+
+/* ====================== Parágrafo ====================== */
+p {
+    text-align: center; /* Centraliza o texto */
+    color: #082640; /* Cor do texto */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte do texto */
+    font-size: 1.3em; /* Tamanho da fonte */
+}
+
+/* ====================== Subtítulos ====================== */
+h2 {
+    text-align: center; /* Centraliza o texto */
+    color: #082640; /* Cor do texto */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte do texto */
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+/* ====================== Habilidades ====================== */
+.habilidades {
+    display: flex; /* Flexbox para alinhar elementos */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza conteúdo dentro da div */
+}
+
+/* Container dos ícones de habilidades */
+.icones {
+    display: flex; /* Flexbox para alinhar os ícones */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaçamento entre os ícones */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    margin-top: 10px; /* Espaçamento acima da div */
+}
+
+/* Estiliza cada ícone individual */
+.icon {
+    width: 4em; /* Largura do ícone */
+    height: 4em; /* Altura do ícone */
+    object-fit: contain; /* Mantém proporção da imagem */
+    display: inline-block; /* Exibe como bloco em linha */
+    margin: 0.5em; /* Margem ao redor do ícone */
+    padding: 0; /* Sem padding */
+    margin-bottom: 3em; /* Espaço inferior */
+}
+
+/* ====================== Experiência Profissional ====================== */
+.experiencia {
+    display: flex; /* Flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto dentro da div */
+    color: #082640; /* Cor do texto */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estilo para títulos de profissão */
+.profissao dt {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto */
+    font-size: 1.5em; /* Tamanho do texto */
+    margin-bottom: 6px; /* Espaço abaixo do título */
+    font-weight: bold; /* Negrito */
+    color: #082640; /* Cor do texto */
+}
+
+/* Estilo para descrição da profissão */
+.profissao dd {
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto */
+    margin-bottom: 14px; /* Espaço abaixo do texto */
+    margin-left: 20px; /* Espaço à esquerda */
+    color: #082640; /* Cor do texto */
+    font-size: 1.1em; /* Tamanho da fonte */
+}
+
+/* ====================== Contato ====================== */
+.contato {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Alinha elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 40px; /* Margem externa */
+}
+
+/* Container do título com imagem ao lado */
+.logocontato {
+    display: flex; /* Flexbox */
+    align-items: center; /* Alinha verticalmente */
+    gap: 10px; /* Espaçamento entre imagem e título */
+    margin-bottom: 25px; /* Espaçamento abaixo do container */
+}
+
+/* Estilo do título de contato */
+.contato h2 {
+    text-align: center; /* Centraliza texto */
+    margin-bottom: 25px; /* Espaçamento abaixo do título */
+    font-size: 2em; /* Tamanho da fonte */
+    color: #082640; /* Cor do texto */
+}
+
+/* ====================== Formulário ====================== */
+.contato form {
+    width: 350px; /* Largura do formulário */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: #082640; /* Sombra do formulário */
+    background-color: #E9E6FC; /* Cor de fundo */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Coluna */
+    gap: 12px; /* Espaço entre os elementos */
+    border: 1.5px solid #082640; /* Borda */
+}
+
+/* Inputs e textarea do formulário */
+.form-input {
+    padding: 10px; /* Espaçamento interno */
+    border: 1.5px solid #082640; /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+    width: 95%; /* Largura do input */
+    background-color: #D6D1F6; /* Cor de fundo */
+}
+
+/* ====================== Botão ====================== */
+.contato button {
+    background-color: transparent; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de clique */
+    display: flex; /* Flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+/* Imagem dentro do botão */
+.contato button img {
+    width: 70px; /* Largura da imagem */
+    height: 70px; /* Altura da imagem */
+    display: block; /* Exibe como bloco */
+    transition: transform 0.2s ease-in-out; /* Animação ao transformar */
+}
+
+/* Efeito ao passar o mouse sobre a imagem do botão */
+.contato button:hover img {
+    transform: scale(1.1); /* Aumenta tamanho da imagem */
+}
+
+/* ====================== Footer ====================== */
+footer {
+    text-align: center; /* Centraliza todo o conteúdo do footer */
+    margin-top: 40px; /* Espaço acima do footer */
+    padding: 20px 0; /* Espaçamento interno vertical */
+}
+
+/* Centraliza a imagem de download abaixo do h2 */
+footer h2 {
+    margin-bottom: 15px; /* Espaço entre título e imagem */
+    color: #082640; /* Cor do título */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
+    font-size: 2em;
+}
+
+footer a img {
+    display: block; /* Transforma em bloco para respeitar centralização */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    cursor: pointer; /* Cursor de clique */
+    transition: transform 0.2s ease-in-out; /* Efeito de hover suave */
+}
+
+footer a img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
