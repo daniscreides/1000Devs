@@ -26,7 +26,7 @@ public class App {
 
         limparConsole();
 
-        // Desenha a forca e palavra inicialmente
+        
         mostrarStatus(letrasUsadas, numTentativa, 1);
         exibirForca(numTentativa);
         mostrarPalavra(letrasDescobertas, 10);
@@ -34,13 +34,13 @@ public class App {
 
         while (numTentativa > 0 && !palavraCompleta) {
 
-            // Solicita letra do usuário
+            
             char letra = ' ';
             boolean entradaValida = false;
             while (!entradaValida) {
-                // Limpa linha do prompt e mensagem de erro
-                System.out.print("\033[12;0H\033[2K"); // Prompt
-                System.out.print("\033[13;0H\033[2K"); // Mensagem de erro
+                
+                System.out.print("\033[12;0H\033[2K"); 
+                System.out.print("\033[13;0H\033[2K"); 
                 System.out.print("Digite uma letra: ");
 
                 String entrada = scanner.nextLine().trim().toLowerCase(); // Garante que Enter sozinho não funcione
@@ -54,7 +54,7 @@ public class App {
                 }
             }
 
-            // Verifica se a letra já foi usada
+            
             if (letrasUsadas.contains(letra)) {
                 System.out.print("\033[13;0H\033[2K");
                 System.out.print("Você já digitou essa letra! Pressione Enter para continuar...");
@@ -65,7 +65,7 @@ public class App {
 
             letrasUsadas.add(letra);
 
-            // Verifica se acertou
+            
             if (palavra.contains(String.valueOf(letra))) {
                 for (int i = 0; i < palavra.length(); i++) {
                     if (palavra.charAt(i) == letra) {
@@ -76,13 +76,13 @@ public class App {
                 numTentativa--;
             }
 
-            // Atualiza todas as áreas
+            
             mostrarStatus(letrasUsadas, numTentativa, 1);
             exibirForca(numTentativa);
             mostrarPalavra(letrasDescobertas, 10);
             mostrarPrompt();
 
-            // Verifica se a palavra foi completa
+           
             palavraCompleta = true;
             for (char c : letrasDescobertas) {
                 if (c == '_') {
@@ -92,13 +92,12 @@ public class App {
             }
         }
 
-        // Resultado final
-        System.out.print("\033[12;0H\033[2K"); // Limpa prompt
-        System.out.print("\033[13;0H\033[2K"); // Limpa mensagem
+        System.out.print("\033[12;0H\033[2K"); 
+        System.out.print("\033[13;0H\033[2K"); 
         mostrarStatus(letrasUsadas, numTentativa, 1);
         exibirForca(numTentativa);
         mostrarPalavra(letrasDescobertas, 10);
-        System.out.print("\033[12;0H"); // Linha do resultado
+        System.out.print("\033[12;0H"); 
         if (palavraCompleta) {
             System.out.println("Parabéns! Você venceu.");
         } else {
@@ -109,10 +108,9 @@ public class App {
         scanner.close();
     }
 
-    // 🔧 Método ajustado com caminho completo
     public static String pegarPalavraAleatoria() {
-        // Caminho completo do arquivo (ajustado para o seu Mac)
-        String caminhoArquivo = "/Users/Dani/Documents/Mesttra1000Devs/Java/Exercicios03/JogoDaVelha/JogoVelha/src/palavras.txt";
+    
+        String caminhoArquivo = "/Users/Dani/Documents/Mesttra/Java1000Devs/Exercicios03/JogoDaVelha/JogoVelha/src/palavras.txt";
 
         File arquivo = new File(caminhoArquivo);
         ArrayList<String> listaPalavras = new ArrayList<>();
@@ -200,7 +198,7 @@ public class App {
             =========
             """
         };
-        System.out.print("\033[3;0H"); // Linha da forca
+        System.out.print("\033[3;0H"); 
         System.out.println(forca[6 - tentativas]);
     }
 
