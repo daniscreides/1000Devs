@@ -2,44 +2,36 @@
 
 /* ====================== Body / Geral ====================== */
 body {
-    background-color: #D6D1F6; /* Cor de fundo da página */
-    background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte principal */
-    text-align: justify; /* Texto justificado */
-    margin-top: 0; /* Remove margem superior */
-    margin-right: 0; /* Remove margem direita */
-    margin-bottom: 0; /* Remove margem inferior */
-    margin-left: 0; /* Remove margem esquerda */
-    padding-top: 1em; /* Espaçamento interno superior */
-    padding-right: 1em; /* Espaçamento interno à direita */
-    padding-bottom: 1em; /* Espaçamento interno inferior */
-    padding-left: 1em; /* Espaçamento interno à esquerda */
+    background-color: #D6D1F6;
+    background-attachment: fixed;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0 0 0 0;
+    padding: 1em 1em 1em 1em;
 }
 
 /* ====================== Foto de Perfil ====================== */
 .fotoperfil {
-    display: block; /* Transforma a imagem em bloco */
-    margin-bottom: 0.625em; /* Espaçamento abaixo da foto */
-    width: 13em; /* Largura da imagem */
-    height: auto; /* Altura proporcional */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
+    display: block;
+    margin: auto;
+    width: 13em;
+    height: 13em;    
 }
 
 /* ====================== Linhas Horizontais ====================== */
 hr {
-    border: none; /* Remove borda padrão */
-    border-top: 3px solid #082640; /* Adiciona linha superior com cor e espessura */
-    margin: 20px auto; /* Espaçamento vertical e centralização horizontal */
-    width: 80%; /* Largura da linha */
+    border: none;
+    border-top: 3px solid #082640;
+    margin: 20px auto;
+    width: 80%;
 }
 
 /* ====================== Título Principal ====================== */
 h1 {
-    text-align: center; /* Centraliza o texto */
-    color: #082640; /* Cor do texto */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte do texto */
-    font-size: 2em; /* Tamanho da fonte */
+    text-align: center;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
 
 /* ====================== Redes Sociais ====================== */
@@ -108,6 +100,52 @@ h2 {
     margin: 0.5em; /* Margem ao redor do ícone */
     padding: 0; /* Sem padding */
     margin-bottom: 3em; /* Espaço inferior */
+}
+
+/* ====================== Formação Acadêmica ====================== */
+.formacao {
+    display: flex; /* Flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto dentro da div */
+    color: #082640; /* Cor do texto */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+.academica {
+    display: flex; /* Flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto dentro da div */
+    color: #082640; /* Cor do texto */
+    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
+    font-size: 1em; /* Tamanho da fonte */ 
+}
+
+.academica dt {
+    display: flex; /* Flexbox para alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto */
+    font-size: 1.5em; /* Tamanho do texto */
+    margin-bottom: 6px; /* Espaço abaixo do título */
+    font-weight: bold; /* Negrito */
+    color: #082640; /* Cor do texto */
+}
+
+.academica dd {
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto */
+    margin-bottom: 14px; /* Espaço abaixo do texto */
+    margin-left: 20px; /* Espaço à esquerda */
+    color: #082640; /* Cor do texto */
+    font-size: 1.1em; /* Tamanho da fonte */ 
 }
 
 /* ====================== Experiência Profissional ====================== */
