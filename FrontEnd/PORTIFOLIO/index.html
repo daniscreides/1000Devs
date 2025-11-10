@@ -5,86 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio I Danieli Souza</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ====================== Perfil ====================== -->
-    <div class="perfil">
-        <img src="imagens/fotoperfil.png" alt="Foto Perfil Dani" class="fotoperfil">
-        <h1>Danieli Souza</h1>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/daniscreides/" target="_blank"> 
-                <img src="imagens/linkedin.png" alt="Foto Logo Linkedin" class="redes" width="20" height="20">
-            </a>
-            <a href="https://github.com/daniscreides" target="_blank">
-                <img src="imagens/github.png" alt="Foto Logo GitHub" class="redes" width="20" height="20">
-            </a>
-            <a href="mailto:danielisouza@gmail.com" target="_blank">
-                <img src="imagens/gmail.png" alt="Foto Logo Gmail" class="redes" width="20" height="20">
-            </a>
-        </div>
-        <p>
-            | Estudante de TI | Aprendiz 1000DEVs (Java & Full Stack) Back-end | Lógica de Programação | <br>
-            | Python | Estudante de Desenvolvimento de Software & Tecnologias Web |
+    <header>
+        <div class="perfil">
+            <img src="imagens/fotoperfil.png" alt="Foto Perfil Dani" class="fotoperfil">
+            <h1>Danieli Souza</h1>
             
-        </p>
-    </div>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/daniscreides/" target="_blank"> 
+                    <img src="imagens/linkedin.png" alt="Foto Logo Linkedin" class="redes" width="50" height="50">
+                </a>
+                <a href="https://github.com/daniscreides" target="_blank">
+                    <img src="imagens/github.png" alt="Foto Logo GitHub" class="redes" width="50" height="50">
+                </a>
+                <a href="mailto:danielisouza@gmail.com" target="_blank">
+                    <img src="imagens/email.png" alt="Foto Logo Gmail" class="redes" width="50" height="50">
+                </a>
+            </div>
+            <p> Aprendiz 1000DEVs - Estudante de TI - Desenvolvedor Full Stack </p>
+        </div>
+    </header>
 <hr>
-    <!-- ====================== Habilidades ====================== -->
-    <div>
-        <div class="habilidades">
-            <img src="imagens/habilidades.png" alt="Logo Habilidades" width="60" height="60">
+
+    <main>
+        <article class="habilidades">
             <h2>Habilidades</h2>
-        </div>
-
-        <div class="icones">
-            <img src="imagens/html.png" alt="Logo HTML" class="icon">
-            <img src="imagens/css.png" alt="Logo CSS" class="icon">
-            <img src="imagens/javascript.png" alt="Logo JavaScript" class="icon">
-            <img src="imagens/java.png" alt="Logo Java" class="icon">
-            <img src="imagens/python.png" alt="Logo Python" class="icon">
-            
-        </div>
+            <div class="icones">
+                <img src="imagens/html.png" alt="Logo HTML" class="icon">
+                <img src="imagens/css.png" alt="Logo CSS" class="icon">
+                <img src="imagens/javascript.png" alt="Logo JavaScript" class="icon">
+                <img src="imagens/java.png" alt="Logo Java" class="icon">            
+            </div>
+        </article>
         <hr>
-        <div class="formacao">
-            <img src="imagens/formacao.png" alt="Logo Formação" width="50" height="50">
+
+        <article class="formacao">
             <h2>Formação Acadêmica</h2>
-        </div>
-
-        <div class="academica">
-            <dl>
-                <dt>Ensino Médio</dt>
-                <dd>ECI Assis Chateaubriand.</dd>
-                
-        </div>
+            <div>
+                <dl>
+                    <dt>Ensino Médio</dt>
+                    <dd>ECI Assis Chateaubriand.</dd>
+                </dl>
+            </div>
+        </article>
         <hr>
-        <div class="experiencia">
-            <img src="imagens/profissaopng.png" alt="Logo Profissão" width="50" height="50">
+
+        <article class="profissao">
             <h2>Experiência Profissional</h2>
-        </div>
+            <div>
+                <dl>
+                    <dt>Servidor Público</dt>
+                    <dd>Governo do Estado da Paraíba (Novembro 2021 - O Momento).</dd>
 
-        <div class="profissao">
-            <dl>
-                <dt>Servidor Público</dt>
-                <dd>Governo do Estado da Paraíba (Novembro 2021 - O Momento).</dd>
+                    <dt>Estagiária</dt>
+                    <dd>1° Cartório de Registro Civil das Pessoas Naturais (Dezembro 2024 - Abril 2025).</dd>
 
-                <dt>Estagiária</dt>
-                <dd>1° Cartório de Registro Civil das Pessoas Naturais (Dezembro 2024 - Abril 2025).</dd>
+                    <dt>Ricardo Eletro</dt>
+                    <dd>Operador de Caixa (Janeiro 2016 - Janeiro 2019).<hr></dd>
+                </dl>
+            </div>
+    </main>
 
-                <dt>Ricardo Eletro</dt>
-                <dd>Operador de Caixa (Janeiro 2016 - Janeiro 2019).<hr></dd>
-            </dl>
-        </div>
-    </div>
-
-    <!-- ====================== Contato ====================== -->
     <section class="contato">
-        <div class="logocontato">
-            <img src="imagens/@.png" alt="Logo Contato" width="60" height="60">
-            <h2>Contato</h2>
-        </div>
+        <h2>Contato</h2>
         <form>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" class="form-input"/>

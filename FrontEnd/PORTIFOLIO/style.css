@@ -1,6 +1,220 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Italic-Variable.ttf') format('truetype');
+}
 
-/* ====================== Body / Geral ====================== */
+:root {
+    --cor0: #E0E0E0;
+    --cor1: #485177;
+    --cor2: #2F3658;
+    --cor3: #1E264A;
+    --cor4: #0F1635;
+    --cor5: #04091F;
+
+    --fonte-padrao: 'Work Sans', arial, verdana, helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-align: center;
+}
+
+.fotoperfil {
+    display: block;
+    margin: 1em auto 0em auto;
+    padding-top: 1em;
+    width: 11em;
+    height: 11em; 
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+main h2 {
+    font-size: 2em;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 1em;
+}
+
+.redes img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redes img:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    border: none;
+    border-top: 3px solid var(--cor1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 4em;
+    height: 4em;
+    object-fit: contain;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+.formacao h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--cor0);
+    font-size: 2em;
+}
+
+.formacao dt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: var(--cor0);
+}
+
+.formacao dd {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 20px;
+    color: var(--cor0);
+    font-size: 1em;
+}
+
+.profissao h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--cor0);
+    font-size: 2em;
+}
+
+.profissao dt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: var(--cor0);
+}
+
+.profissao dd {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 20px;
+    color: var(--cor0);
+    font-size: 1em;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: var(--cor0);
+}
+
+.contato form {
+    width: 30em;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: var(--cor1);
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 0.1em solid var(--cor5);
+}
+
+.form-input {
+    padding: 10px;
+    border: 0.1em solid var(--cor5);
+    border-radius: 8px;
+    font-size: 1.2em;
+    width: 95%;
+    background-color: var(--cor0);
+}
+
+.contato button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contato button img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contato button:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/*
+@charset "UTF-8";
+
 body {
     background-color: #D6D1F6;
     background-attachment: fixed;
@@ -10,7 +224,6 @@ body {
     padding: 1em 1em 1em 1em;
 }
 
-/* ====================== Foto de Perfil ====================== */
 .fotoperfil {
     display: block;
     margin: auto;
@@ -18,7 +231,6 @@ body {
     height: 13em;    
 }
 
-/* ====================== Linhas Horizontais ====================== */
 hr {
     border: none;
     border-top: 3px solid #082640;
@@ -26,7 +238,6 @@ hr {
     width: 80%;
 }
 
-/* ====================== Título Principal ====================== */
 h1 {
     text-align: center;
     color: #082640;
@@ -34,250 +245,228 @@ h1 {
     font-size: 2em;
 }
 
-/* ====================== Redes Sociais ====================== */
-/* Container dos ícones de redes */
 .redes {
-    display: flex; /* Flexbox para alinhar os ícones */
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 17px; /* Espaço entre os ícones */
-    margin-bottom: 15px; /* Espaçamento abaixo da div */
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 15px;
 }
 
-/* Estiliza os ícones dentro da div de redes */
 .redes img {
-    width: 40px; /* Largura do ícone */
-    height: 40px; /* Altura do ícone */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    transition: transform 0.2s; /* Animação suave para transformações */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
-/* Efeito ao passar o mouse sobre os ícones */
 .redes img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do ícone */
+    transform: scale(1.1);
 }
 
-/* ====================== Parágrafo ====================== */
 p {
-    text-align: center; /* Centraliza o texto */
-    color: #082640; /* Cor do texto */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte do texto */
-    font-size: 1.3em; /* Tamanho da fonte */
+    text-align: center;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
 }
 
-/* ====================== Subtítulos ====================== */
 h2 {
-    text-align: center; /* Centraliza o texto */
-    color: #082640; /* Cor do texto */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte do texto */
-    font-size: 2em; /* Tamanho da fonte */
+    text-align: center;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
 
-/* ====================== Habilidades ====================== */
 .habilidades {
-    display: flex; /* Flexbox para alinhar elementos */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza conteúdo dentro da div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
 
-/* Container dos ícones de habilidades */
 .icones {
-    display: flex; /* Flexbox para alinhar os ícones */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    gap: 20px; /* Espaçamento entre os ícones */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
-    margin-top: 10px; /* Espaçamento acima da div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-/* Estiliza cada ícone individual */
 .icon {
-    width: 4em; /* Largura do ícone */
-    height: 4em; /* Altura do ícone */
-    object-fit: contain; /* Mantém proporção da imagem */
-    display: inline-block; /* Exibe como bloco em linha */
-    margin: 0.5em; /* Margem ao redor do ícone */
-    padding: 0; /* Sem padding */
-    margin-bottom: 3em; /* Espaço inferior */
+    width: 4em;
+    height: 4em;
+    object-fit: contain;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0;
+    margin-bottom: 3em;
 }
 
-/* ====================== Formação Acadêmica ====================== */
 .formacao {
-    display: flex; /* Flexbox para alinhar conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto dentro da div */
-    color: #082640; /* Cor do texto */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
-    font-size: 1em; /* Tamanho da fonte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 .academica {
-    display: flex; /* Flexbox para alinhar conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto dentro da div */
-    color: #082640; /* Cor do texto */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
-    font-size: 1em; /* Tamanho da fonte */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 .academica dt {
-    display: flex; /* Flexbox para alinhamento */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto */
-    font-size: 1.5em; /* Tamanho do texto */
-    margin-bottom: 6px; /* Espaço abaixo do título */
-    font-weight: bold; /* Negrito */
-    color: #082640; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #082640;
 }
 
 .academica dd {
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto */
-    margin-bottom: 14px; /* Espaço abaixo do texto */
-    margin-left: 20px; /* Espaço à esquerda */
-    color: #082640; /* Cor do texto */
-    font-size: 1.1em; /* Tamanho da fonte */ 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    color: #082640;
+    font-size: 1.1em;
 }
 
-/* ====================== Experiência Profissional ====================== */
 .experiencia {
-    display: flex; /* Flexbox para alinhar conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto dentro da div */
-    color: #082640; /* Cor do texto */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
-    font-size: 1em; /* Tamanho da fonte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
-/* Estilo para títulos de profissão */
 .profissao dt {
-    display: flex; /* Flexbox para alinhamento */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto */
-    font-size: 1.5em; /* Tamanho do texto */
-    margin-bottom: 6px; /* Espaço abaixo do título */
-    font-weight: bold; /* Negrito */
-    color: #082640; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #082640;
 }
 
-/* Estilo para descrição da profissão */
 .profissao dd {
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 10px; /* Espaçamento entre elementos */
-    text-align: center; /* Centraliza texto */
-    margin-bottom: 14px; /* Espaço abaixo do texto */
-    margin-left: 20px; /* Espaço à esquerda */
-    color: #082640; /* Cor do texto */
-    font-size: 1.1em; /* Tamanho da fonte */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-left: 20px;
+    color: #082640;
+    font-size: 1.1em;
 }
 
-/* ====================== Contato ====================== */
 .contato {
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Alinha elementos em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    margin: 40px; /* Margem externa */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
 }
 
-/* Container do título com imagem ao lado */
 .logocontato {
-    display: flex; /* Flexbox */
-    align-items: center; /* Alinha verticalmente */
-    gap: 10px; /* Espaçamento entre imagem e título */
-    margin-bottom: 25px; /* Espaçamento abaixo do container */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
 }
 
-/* Estilo do título de contato */
 .contato h2 {
-    text-align: center; /* Centraliza texto */
-    margin-bottom: 25px; /* Espaçamento abaixo do título */
-    font-size: 2em; /* Tamanho da fonte */
-    color: #082640; /* Cor do texto */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #082640;
 }
 
-/* ====================== Formulário ====================== */
 .contato form {
-    width: 350px; /* Largura do formulário */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 15px; /* Borda arredondada */
-    box-shadow: #082640; /* Sombra do formulário */
-    background-color: #E9E6FC; /* Cor de fundo */
-    display: flex; /* Flexbox */
-    flex-direction: column; /* Coluna */
-    gap: 12px; /* Espaço entre os elementos */
-    border: 1.5px solid #082640; /* Borda */
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: #082640;
+    background-color: #E9E6FC;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1.5px solid #082640;
 }
 
-/* Inputs e textarea do formulário */
 .form-input {
-    padding: 10px; /* Espaçamento interno */
-    border: 1.5px solid #082640; /* Borda */
-    border-radius: 8px; /* Bordas arredondadas */
-    font-size: 1em; /* Tamanho da fonte */
-    width: 95%; /* Largura do input */
-    background-color: #D6D1F6; /* Cor de fundo */
+    padding: 10px;
+    border: 1.5px solid #082640;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 95%;
+    background-color: #D6D1F6;
 }
 
-/* ====================== Botão ====================== */
 .contato button {
-    background-color: transparent; /* Sem fundo */
-    border: none; /* Sem borda */
-    cursor: pointer; /* Cursor de clique */
-    display: flex; /* Flexbox */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-top: 10px; /* Espaço acima do botão */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-/* Imagem dentro do botão */
 .contato button img {
-    width: 70px; /* Largura da imagem */
-    height: 70px; /* Altura da imagem */
-    display: block; /* Exibe como bloco */
-    transition: transform 0.2s ease-in-out; /* Animação ao transformar */
+    width: 70px;
+    height: 70px;
+    display: block;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Efeito ao passar o mouse sobre a imagem do botão */
 .contato button:hover img {
-    transform: scale(1.1); /* Aumenta tamanho da imagem */
+    transform: scale(1.1);
 }
 
-/* ====================== Footer ====================== */
 footer {
-    text-align: center; /* Centraliza todo o conteúdo do footer */
-    margin-top: 40px; /* Espaço acima do footer */
-    padding: 20px 0; /* Espaçamento interno vertical */
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
 }
 
-/* Centraliza a imagem de download abaixo do h2 */
 footer h2 {
-    margin-bottom: 15px; /* Espaço entre título e imagem */
-    color: #082640; /* Cor do título */
-    font-family: 'Delius', Arial, Helvetica, sans-serif; /* Fonte */
+    margin-bottom: 15px;
+    color: #082640;
+    font-family: 'Delius', Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
 
 footer a img {
-    display: block; /* Transforma em bloco para respeitar centralização */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    cursor: pointer; /* Cursor de clique */
-    transition: transform 0.2s ease-in-out; /* Efeito de hover suave */
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
 
 footer a img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.1);
 }
+*/
